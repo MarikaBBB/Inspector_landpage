@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inspector is a powerful tool for ensuring data quality and integrity in ETL processes, offering features like data profiling and error detection.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Inspector Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>    
+<body>
+    <header role="banner">
+        <h1>Inspector</h1>
+        <nav aria-label="Main navigation"> 
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="install.html">How to Install</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content" role="main"> 
+        <section id="intro" aria-labelledby="intro-heading"> 
+            <h2 id="intro-heading">Introduction</h2>
+            <p>Inspector is a tool designed to ensure the quality and correctness of data within ETL (Extract, Transform, Load) pipelines. The need for such a tool arises because ETL processes are complex and often lack sufficient testing, which can lead to issues with data integrity and accuracy in production environments.</p>
+            <p>In simple terms, Inspector acts like a watchdog for your data systems. It allows you to set up checks, to make sure your data meets certain conditions. If data doesn't meet these conditions, Inspector can alert you. This is crucial for catching errors early and maintaining trust in your data systems.</p>
+            <p>The tool is also equipped with profiling capabilities, meaning it can analyze data tables and generate reports on the characteristics of your data, like how many missing values there are or what kind of data types you have.</p>
+            <p>Moreover, Inspector is made to be flexible and fit into different business needs by allowing the grouping and tagging of checks, running them as needed. It’s built using Django and includes a REST API, making it accessible and integrable with other systems.</p>
+            <p>For comprehensive documentation, visit: <a href="https://data-inspector.readthedocs.io/en/latest/index.html" aria-label="Inspector Documentation on Read the Docs">Inspector Documentation</a>.</p>
+        </section>
+        <section id="featureIcons" aria-labelledby="features-heading" class="feature-icons">
+            <a href="data-quality.html" class="feature-icon">
+                <img src="./data-quality-icon-3.jpg.png" alt="Icon representing Data Quality">
+            </a>
+            <a href="data-profile.html" class="feature-icon">
+                <img src="./2980288.png" alt="Icon representing Data Profile">
+            </a>
+        </section>                  
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <p>&copy; 2024 Marcin Szymański</p>
+        </div>
+        <nav aria-label="Footer navigation"> 
+            <ul class="footer-links">
+                <li><a href="https://github.com/ms32035/inspector" target="_blank" rel="noopener noreferrer">
+                    <img src="./178-1787243_github-icon-png.png" alt="GitHub logo" width="40">GitHub</a></li>
+            </ul>
+        </nav>
+    </footer>          
+    
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact page for the Inspector project. Get in touch with us for more information, support, or feedback.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Contact - Inspector Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header role="banner">
+        <h1>Inspector</h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="install.html">How to Install</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Us</h2>
+            <form id="contactForm" action="https://formspree.io/f/xaygovyn" method="POST">
+                <div class="input-group">
+                    <label for="nameInput">Your Name:</label>
+                    <input type="text" name="name" id="nameInput" placeholder="Enter your name" required autocomplete="name">
+                </div>
+        
+                <div class="input-group">
+                    <label for="emailInput">Your Email:</label>
+                    <input type="email" name="email" id="emailInput" placeholder="Enter your email" required autocomplete="email">
+                </div>
+        
+                <div class="input-group">
+                    <label for="messageTextArea">Your Message:</label>
+                    <textarea name="message" id="messageTextArea" placeholder="Type your message" required rows="4" autocomplete="off"></textarea>
+                </div>
+        
+                <div class="buttonContainer">
+                    <button type="submit">Submit</button>
+                </div>
+        
+                <p id="thankYouMessage" class="message">Thank you! We will get back to you soon.</p>
+            </form>
+        </section>  
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <p>&copy; 2024 Marcin Szymański</p>
+        </div>
+        <nav aria-label="Footer navigation"> 
+            <ul class="footer-links">
+                <li><a href="https://github.com/ms32035/inspector" target="_blank" rel="noopener noreferrer">
+                    <img src="./178-1787243_github-icon-png.png" alt="GitHub logo" width="40">GitHub</a></li>
+            </ul>
+        </nav>
+    </footer> 
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+

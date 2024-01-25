@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Step-by-step guide on how to install the Inspector Django app using Docker.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>How to Install Inspector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header role="banner">
+        <h1>Inspector</h1>
+        <nav aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="install.html" aria-current="page">How to Install</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="installation" aria-labelledby="installation-heading">
+            <h2 id="installation-heading">Installation</h2>
+            <p>Inspector is a Django app with a Celery worker for executing the checks. If you know Django, and how to deploy Django apps, you are already one step ahead.</p>
+            
+            <h3>Docker Images</h3>
+            <p>Docker is the only supported way of deploying Inspector. The base Docker Image <code>ms32035/inspector</code> contains only PostgreSQL database drivers. See <a href="https://data-inspector.readthedocs.io/en/latest/installation.html#extending" aria-label="Learn how to extend Inspector Docker images">Extending</a> to learn how to add your own drivers.</p>
+            
+            <h3>Develop</h3>
+            <p>The develop image contains only dependencies required to run the app in development mode, with code being mounted from the current directory. It is the fastest way to get you started, but under no circumstances should this be used to run in production.</p>
+            <p>Steps to get you up and running:</p>
+            <ol>
+                <li>Clone the repo</li>
+                <li><code>docker-compose -f docker-compose-develop.yml up</code></li>
+            </ol>
+            <p>This will also deploy Redis and Postgres. The environment will be running off the configuration in:</p>
+            <ul>
+                <li><code>.envs/.develop/.inspector</code></li>
+                <li><code>.envs/.develop/.postgres</code></li>
+                <li><code>config/settings/local.py</code></li>
+            </ul>
+            <p>Django’s development server will be listening on port 8000.</p>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <p>&copy; 2024 Marcin Szymański</p>
+        </div>
+        <nav aria-label="Footer navigation"> 
+            <ul class="footer-links">
+                <li><a href="https://github.com/ms32035/inspector" target="_blank" rel="noopener noreferrer">
+                    <img src="./178-1787243_github-icon-png.png" alt="GitHub logo" width="40">GitHub</a></li>
+            </ul>
+        </nav>
+    </footer>     
+
+    <script src="script.js"></script>
+</body>
+</html>

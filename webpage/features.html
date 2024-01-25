@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the features of the Inspector tool, including data quality checks, history, tagging, and data profiling.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Features - Inspector Tool</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Inspector</h1>
+        <nav role="navigation" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="install.html">How to Install</a></li>
+                <li><a href="features.html" class="active">Features</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="features">
+            <h2>Features</h2>
+            <article class="feature-item">
+                <h3>Checks Management</h3>
+                <p>Inspector allows you to execute and manage SQL queries within your database or across multiple databases, with comprehensive support for any SqlAlchemy-compatible database. You can manage and view all defined checks within the application, including details such as names, statuses, and last run times. Additionally, Inspector enables you to define new checks with customizable SQL queries, set conditions for triggers and alerts, and specify the databases for query execution, ensuring a robust and flexible data validation process.</p>
+            </article>
+            <article class="feature-item">
+                <h3>Check History</h3>
+                <p>Review the logs and historical data of check executions to monitor and analyze the performance over time across multiple environments. This includes tracking success rates, run times, and error messages to ensure thorough testing and reliability of data.</p>
+            </article>
+            <article class="feature-item">
+                <h3>Tagging</h3>
+                <p>Organize checks with tags, allowing you to group and execute multiple checks simultaneously for efficient testing and monitoring.</p>
+            </article>
+            <article class="feature-item">
+                <h3>Table List</h3>
+                <p>Inspect the list of database tables, their records, and quality metrics, and perform operations such as profiling and validation.</p>
+            </article>
+            <article class="feature-item">
+                <h3>Data Profiling and Reporting</h3>
+                <p>Inspector streamlines the data profiling process by rapidly profiling database tables using ydata-profiling, enhancing the structure and integrity of your data. It tracks the history of data profiling activities, providing valuable insights into data characteristics and their evolution over time. Furthermore, Inspector utilizes the Pandas Profiling library to generate detailed reports on data profiling, complete with statistical summaries and visualizations, aiding in thorough data analysis and decision-making.</p>
+            </article>            
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Marcin Szymański</p>
+        </div>
+        <nav aria-label="Footer links"> 
+            <ul class="footer-links">
+                <li><a href="https://github.com/ms32035/inspector" target="_blank" rel="noopener noreferrer">
+                    <img src="./178-1787243_github-icon-png.png" alt="GitHub logo" width="40">GitHub</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

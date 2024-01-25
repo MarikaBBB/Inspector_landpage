@@ -1,0 +1,200 @@
+/* Base styles for the entire document */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: black;
+    background-color: white;
+}
+
+/* Global box-sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Flex layout for body to structure the main content */
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px; /* max-width for overall content */
+    margin: auto; /* Center the content */
+}
+
+/* Header styles */
+header {
+    background-color: var(--primary-color, black);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Navigation menu styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem; 
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    text-decoration: underline; 
+}
+
+/* Main content padding */
+main {
+    padding: 1rem;
+}
+
+/* Styles for introduction, installation, and features sections */
+#intro, #installation, #features {
+    background-color: var(--secondary-color, #f9f9f9); /* Default background color for sections */
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+/* Override background color for features section specifically */
+#featureIcons {
+    background-color: white; 
+}
+
+/* Flex container for feature icons */
+.feature-icons {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.feature-icon img {
+    width: 100px;
+    height: auto;
+    background: none;
+}
+
+.feature-icon {
+    text-align: center;
+    flex: none;
+}
+
+/* Contact section styles */
+#contact {
+    background-color: var(--secondary-color, #f9f9f9);
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+/* Input group styles */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button styles */
+.buttonContainer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buttonContainer button {
+    background-color: var(--primary-color, black);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem; 
+}
+
+.buttonContainer button:hover {
+    background-color: #333;
+}
+
+/* Message display style */
+.message {
+    text-align: center;
+    margin-top: 20px;
+    color: green;
+    display: none;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--primary-color, black);
+    color: white;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.footer-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-links a:focus {
+    text-decoration: underline;
+}
+
+.footer-copyright {
+    margin-left: 20px;
+}
+
+/* Media query*/
+@media screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        margin-bottom: 0.5rem;
+    }
+}
+
